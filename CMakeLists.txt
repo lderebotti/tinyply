@@ -26,10 +26,6 @@ endif()
 
 set(BUILD_TESTS false CACHE BOOL "Build tests")
 
-# Example Application
-add_executable(example source/example.cpp)
-target_link_libraries(example PRIVATE tinyply)
-
 # Test Application
 if(${BUILD_TESTS})
   add_executable(tests source/tests.cpp)
